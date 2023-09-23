@@ -5,7 +5,7 @@ defmodule FlightClient do
   # recompile && FlightClient.main
   @spec main :: {pid, pid}
   def main do
-    ElixirST.spawn(&client/6, ["MLA", "CDG", "2022-11-24", :economy, 2], &FlightGateway.gateway/1, [])
+    ElixirST.spawn(&client/6, ["MLA", "PEK", "2024-05-24", :economy, 2], &FlightGateway.gateway/1, [])
   end
 
   @session "S = +{!request(origin: binary, destination: binary, departure_date: binary, class: atom, passenger_no: number).

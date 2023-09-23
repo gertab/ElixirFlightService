@@ -4,7 +4,7 @@ defmodule FlightService.MixProject do
   def project do
     [
       app: :flight_service,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps()
@@ -21,7 +21,7 @@ defmodule FlightService.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:elixirst, "~> 0.6.5"},
+      {:elixirst, "~> 0.8.3"},
       {:ex_doc, "~> 0.22.0", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.10", only: :test},
